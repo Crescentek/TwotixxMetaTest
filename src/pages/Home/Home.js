@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
+import { renderToNodeStream } from 'react-dom/server';
 import "./Home.css";
 import "../App/AppPage.css";
 import Navbar from "../../components/Navbar/Navbar";
@@ -142,14 +143,14 @@ function Home() {
 
   return (
     <>
-    <Helmet>
+    {/* <Helmet>
         <title>Home - Title</title>
         <meta name="description" content="Home - Description" />
         <meta property="og:title" content="Home - OG Title" />
         <meta property="og:description" content="Home - OG Description" />
         <meta property="og:image" content="https://picsum.photos/id/237/200/300" />
         <meta property="og:url" content="https://staging.twotixx.com/" />
-      </Helmet>
+      </Helmet> */}
     <div className="terms-service-main">
       <Navbar />
       <section className="home-banner">
