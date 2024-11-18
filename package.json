@@ -2,6 +2,7 @@
   "name": "twotixweb",
   "version": "0.1.0",
   "main": "src/server.js",
+  "homepage": "https://twotixx-meta-test.vercel.app/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
