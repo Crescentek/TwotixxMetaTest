@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-// import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { renderToNodeStream } from 'react-dom/server';
 import "./Home.css";
 import "../App/AppPage.css";
@@ -141,16 +141,28 @@ function Home() {
     return <Loader />;
   }
 
+  const helmetContext = {};
+
   return (
-    <>
-    {/* <Helmet>
-        <title>Home - Title</title>
+    <HelmetProvider context={helmetContext}>
+    <Helmet onChangeClientState={newState => {
+// Add description
+const metaDescription = document.querySelector(
+'meta[name="og:description"]'
+);
+if (metaDescription) {
+metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
+}
+}}
+>
+        <title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing....</title>
+        <link rel="canonical" href="https://twotixx-meta-test.vercel.app/" />
         <meta name="description" content="Home - Description" />
         <meta property="og:title" content="Home - OG Title" />
         <meta property="og:description" content="Home - OG Description" />
         <meta property="og:image" content="https://picsum.photos/id/237/200/300" />
-        <meta property="og:url" content="https://staging.twotixx.com/" />
-      </Helmet> */}
+        <meta property="og:url" content="https://twotixx-meta-test.vercel.app/" />
+      </Helmet>
     <div className="terms-service-main">
       <Navbar />
       <section className="home-banner">
@@ -161,7 +173,7 @@ function Home() {
               <span>reimagined.</span>
             </h1>
             <p className="bannerP">
-              Test1 - Unforgettable live events. Easy ticket management and upfront
+              Test2 - Unforgettable live events. Easy ticket management and upfront
               pricing. We make going out worry-free.
             </p>
             {/* <div style={{marginRight:"464px"}}> */}
@@ -485,7 +497,7 @@ function Home() {
         <Footer />
       </div>
     </div>
-    </>
+    </HelmetProvider>
   );
 }
 
