@@ -1,0 +1,209 @@
+.container8,
+.content20 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container8 {
+  width: var(--padding-1280px);
+  justify-content: space-between;
+  padding: 0 var(--padding-13xl);
+  box-sizing: border-box;
+}
+.header4,
+.nav-d4 {
+  position: absolute;
+  top: var(--padding-0s);
+  left: var(--padding-0s);
+  height: var(--padding-8xl);
+}
+.header4 {
+  width: var(--full-width);
+  right: var(--padding-0s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-d4 {
+  border-bottom: 1px solid var(--monochrome-white);
+  box-sizing: border-box;
+  width: var(--padding-1440px);
+}
+.pagination3 {
+  position: absolute;
+  top: var(--padding-8xl);
+  left: var(--padding-521px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-23xl);
+}
+.check-verified-02-icon {
+  position: relative;
+  width: var(--gap-31xl);
+  height: var(--gap-31xl);
+  overflow: hidden;
+  flex-shrink: var(--padding-0s);
+}
+.text-payment-declined {
+  line-height: var(--padding-38px);
+  font-weight: var(--font-w-600);
+  font-size: var(--full-height-150);
+  color: var(--red);
+  align-self: stretch;
+  position: relative;
+}
+.supporting-text25,
+.text22 {
+  align-self: stretch;
+  position: relative;
+}
+.text22 {
+  line-height: var(--padding-38px);
+  font-weight: var(--font-w-600);
+}
+.supporting-text25 {
+  font-size: var(--body-md-size);
+  line-height: var(--padding-5xl);
+  font-family: var(--global-font-family);
+}
+.mb-20 {
+  margin-bottom: var(--padding-xl);
+}
+.text-and-supporting-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.header5,
+.text23 {
+  align-self: stretch;
+}
+.header5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.text23 {
+  position: relative;
+  font-size: var(--display-xs-size);
+  line-height: var(--padding-13xl);
+  text-transform: uppercase;
+  font-weight: var(--font-w-600);
+  margin: 10px 0;
+  margin-bottom: var(--padding-0s);
+}
+.group-child {
+  position: absolute;
+  top: var(--padding-0s);
+  left: var(--padding-0s);
+  width: var(--padding-189px);
+  height: var(--padding-189px);
+  object-fit: cover;
+}
+.group-item {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px dashed var(--Primary-Mid-Blue);
+  box-sizing: border-box;
+  width: var(--padding-197px);
+  height: var(--padding-197px);
+}
+.rectangle-parent {
+  position: relative;
+  width: var(--padding-189px);
+  height: var(--padding-189px);
+  margin: var(--padding-15x) auto;
+  margin-bottom: var(--gap-31xl);
+}
+.content21 {
+  position: absolute;
+  top: 202px;
+  left: 540px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.forsussesspage {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  font-family: var(--global-font-family);
+
+  width: var(--full-width);
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 330px;
+}
+.text-and-supporting-text .text22 {
+  font-weight: var(--font-w-400);
+}
+.forsussesspage .supporting-text25 {
+  font-family: var(--global-font-family);
+}
+.forsussesspage .text22,
+.forsussesspage .text23,
+.forsussesspage button {
+  font-family: var(--global-font-family);
+}
+.desktop4 {
+  background-color: var(--monochrome-white);
+  width: var(--padding-1440px);
+  height: var(--padding-1226px);
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--display-sm-size);
+  color: var(--monochrome-black);
+  font-family: var(--display-md);
+}
+
+.modal-content .desktop4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--padding-0s) auto;
+  width: var(--full-width);
+  max-width: var(--padding-910px);
+  height: var(--full-width);
+}
+.modal-content .desktop4 .content21 {
+  position: inherit;
+  padding-top: 62px;
+}
+
+.pay-pagination {
+  position: absolute;
+  top: var(--padding-8xl);
+  left: var(--padding-521px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-23xl);
+}
+
+@media (max-width: 1024.98px) {
+  .forsussesspage {
+    padding: 0 22px;
+    transform: translate(-50%, -10%);
+  }
+}

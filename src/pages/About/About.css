@@ -1,0 +1,413 @@
+.about-page-wrapper {
+  background-color: var(--Primary-Mid-Blue);
+  position: relative;
+}
+
+.deep-blue-mask-container-about {
+  position: absolute;
+  top: 346px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.we-are-twotixx-label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0;
+  font-size: 80px;
+  font-weight: 600x;
+  line-height: 80px;
+}
+
+.top-we-are-twotixx-poster {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background: transparent;
+  max-width:1035px;
+  margin:-201px auto 0;
+  /* margin-top: -201px; */
+  z-index: 1;
+  position: relative;
+}
+
+.top-we-are-twotixx-poster .imgSecondView{
+  position:relative;
+}
+.top-we-are-twotixx-poster .nftGlogImg {
+  position: absolute;
+  left: -200px !important;
+  top: -88px !important;
+}
+
+.pronounce-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  background-color: var(--Twotixx-Text-Ice-White);
+  z-index: 1;
+  position: relative;
+}
+
+.pronounce-content-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pronounce-content-left-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--Primary-Mid-Blue);
+}
+
+.pronounce-content-left-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--body-title);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.pronounce-content-right-container {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text-heading-primary);
+  margin-left: 64px;
+  max-width: 549px;
+}
+
+.our-story-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  /* margin-top: 100px; */
+  max-width:1076px;
+  margin:100px auto 0;
+}
+.our-story-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 502px;
+  gap: 12px;
+}
+
+.our-story-left-container-text-first {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  color: var(--Twotixx-Text-Ice-White);
+}
+
+.our-story-left-container-text-second {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 72px;
+  color: var(--yellow);
+}
+
+.our-story-left-container-text-third {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--Twotixx-Text-Ice-White);
+}
+
+.our-story-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 64px;
+  width: 526px;
+  height: 588px;
+}
+
+.our-story-right-glog {
+  position: absolute; 
+  right:-160px;
+  z-index:-1;
+  top:-256px;
+  max-width:100%;
+}
+
+.ceo-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.ceo-trust-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -140px;
+}
+.ceo-trust-title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--Twotixx-Text-Ice-White);
+}
+
+.ceo-trust-description-container {
+    padding: 40px;
+    width: 856px;
+    background-color: rgba(0, 35, 102, 0.3);
+    border-radius: 40px;
+    margin-top: 24px;
+}
+
+.ceo-trust-description-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--Twotixx-Text-Ice-White);
+}
+
+.ceo-name-about {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Twotixx-Text-Ice-White);
+    margin-top: 40px;
+    margin-bottom: 128px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:1399px) and (min-width:992px)  {
+
+    .we-are-twotixx-label-container{
+      font-size:60px;
+    }
+
+    .top-we-are-twotixx-poster .nftGlogImg {
+      position: absolute;
+      left: 15px !important;
+      top: -1px !important;
+      max-width: 380px;
+    }
+    .our-story-container{
+      padding:0 5%;
+    }
+    .our-story-right-container .img-fluid{
+      max-width:86%;
+    }
+    .our-story-right-glog {
+      right: 0px;
+      z-index: -1;
+      top: -52px;
+      max-width: 380px;
+  }
+  .ceo-container-about{
+    padding:0 5%;
+  }
+  .ceo-trust-title{
+    font-size:48px;
+  }
+  .ceo-container-about{
+    margin-top:62px;
+  }
+
+}
+
+@media (max-width:991px) {
+  .we-are-twotixx-label-container {
+    flex-direction: column;
+    font-size: 45px;
+  font-weight: 600x;
+  line-height: 40px;
+  padding:50px 0 0;
+  }
+
+  .we-are-twotixx-label-container h1{
+    width: 100%;
+    text-align:center;
+    margin:26px 0;
+  }
+  .our-story-container {
+    padding: 0 4%;
+    flex-wrap:wrap;
+    margin-top:60px;
+  }
+  .our-story-right-glog, .top-we-are-twotixx-poster .nftGlogImg{
+    display:none;
+  }
+
+  .top-we-are-twotixx-poster{
+    margin-top:-100px;
+  }
+
+  .ceo-container-about{
+    padding:0 4%;
+  }
+
+  .ceo-trust-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .ceo-container-about{
+    margin-top:60px;
+  }
+
+  .ceo-trust-description-container{
+    width:100%;
+  }
+
+  .pronounce-content-container{
+    padding:64px 4%;
+    flex-wrap:wrap;
+  }
+  .our-story-left-container{
+    width: 65%;
+  }
+  .our-story-right-container {
+    width: 35%;
+    padding-left: 5%;
+    margin: 0;
+}
+
+  .pronounce-content-left-container{
+    width: 34%;
+  }
+  .pronounce-content-right-container{
+    width: 66%;
+    max-width: inherit;
+    margin: 0;
+    padding: 0 0 0 4%;
+  }
+
+  .ceoImg{
+    max-width:100%;
+  }
+
+}
+
+
+@media (max-width:767px) {
+
+  .pronounce-content-container{
+    justify-content:flex-start;
+  }
+
+  .pronounce-content-left-container {
+    width:100%;
+    align-items:flex-start;
+  }
+
+  .pronounce-content-right-container{
+    width:100%;
+    padding:25px 0 0;
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .pronounce-content-left-title{
+    font-size:40px;
+  }
+  .our-story-left-container {
+    width: 100%;
+    max-width:inherit;
+  }
+  .our-story-right-container{
+    width:100%;
+    padding:40px 0 0;
+    height:auto;
+  }
+
+  .our-story-left-container-text-first{
+    font-size:24px;
+    line-height:32px;
+  }
+  .our-story-left-container-text-second{
+    font-size:32px;
+    line-height:40px;
+    margin:0 0 4px;
+  }
+
+  .our-story-left-container-text-third{
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .ceo-trust-title{
+    font-size:40px;
+    line-height:56px;
+  }
+  .ceo-trust-description-title {
+    font-size: 16px;    
+    line-height: 24px;   
+  }
+  .ceo-name-about{
+    margin-bottom:90px;
+      font-size: 20px;
+      margin-top: 32px;
+  
+  }
+
+  .ceo-trust-container{
+    padding:50px 0 0;
+  }
+  .ceo-trust-description-container{
+    text-align:center;
+    padding:25px;
+    margin-top:32px;
+  }
+
+  .top-we-are-twotixx-poster {
+    margin-top: -95px;
+  }
+
+  .deep-blue-mask-container-about img{
+    width:100%;
+  }
+ 
+
+}
+
+
+@media (max-width:575px) {
+
+  .top-we-are-twotixx-poster{
+    padding-bottom:30px;
+  } 
+  .top-we-are-twotixx-poster .imgSecondView {
+    position: relative;
+    height: 375px;
+    object-fit: cover;
+  }
+
+  .top-we-are-twotixx-poster {
+    margin-top: -70px;
+  }
+  .we-are-twotixx-label-container{
+    font-size:40px;
+  }
+  .we-are-twotixx-label-container h1{
+    margin:22px 0;
+  }
+
+}

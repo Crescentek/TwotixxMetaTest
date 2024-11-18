@@ -1,0 +1,37 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#EBEBEB"/>
+<g id="TwotixxDashboard-TicketSales-EventDetails-Desktop" clip-path="url(#clip0_1930_59003)">
+<rect width="1440" height="3142" transform="translate(-1154 -2974)" fill="#FBFBFB"/>
+<g id="Footer / Desktop">
+<mask id="path-1-inside-1_1930_59003" fill="white">
+<path d="M-1154 -80H286V168H-1154V-80Z"/>
+</mask>
+<path d="M-1154 -80H286V168H-1154V-80Z" fill="#FBFBFB"/>
+<path d="M-1154 -79H286V-81H-1154V-79Z" fill="#EBEBEB" mask="url(#path-1-inside-1_1930_59003)"/>
+<g id="Frame 142">
+<g id="Buttons">
+<g id="Pill">
+<rect x="-16" y="-16" width="193" height="48" rx="8" fill="#0057FF"/>
+<g id="Label">
+<g id="vuesax/bold/apple">
+<g id="vuesax/bold/apple_2">
+<g id="apple">
+<g id="Group">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M12.7333 12.7734C13.1266 12.1734 13.2733 11.8668 13.5733 11.1934C11.36 10.3534 11.0067 7.20007 13.1933 5.99341C12.5267 5.15341 11.5867 4.66675 10.7 4.66675C10.06 4.66675 9.61998 4.83342 9.22665 4.98676C8.89331 5.11342 8.59332 5.22675 8.21999 5.22675C7.81998 5.22675 7.46665 5.10009 7.09332 4.96676C6.68665 4.82009 6.25998 4.66675 5.72665 4.66675C4.73331 4.66675 3.67332 5.27342 2.99998 6.31342C2.05332 7.78008 2.21999 10.5267 3.74665 12.8734C4.29332 13.7134 5.02665 14.6534 5.97998 14.6667C6.37998 14.6734 6.63998 14.5534 6.92665 14.4268C7.25332 14.2801 7.60665 14.1201 8.22665 14.1201C8.84665 14.1134 9.19332 14.2801 9.51998 14.4268C9.79998 14.5534 10.0533 14.6734 10.4466 14.6667C11.4133 14.6534 12.1866 13.6134 12.7333 12.7734Z" fill="white"/>
+</g>
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M10.56 1.33325C10.6666 2.06659 10.3666 2.79326 9.97332 3.29993C9.55332 3.84659 8.81998 4.27325 8.11332 4.24658C7.98665 3.53992 8.31332 2.81325 8.71332 2.32658C9.15998 1.79325 9.91331 1.37992 10.56 1.33325Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1930_59003">
+<rect width="1440" height="3142" fill="white" transform="translate(-1154 -2974)"/>
+</clipPath>
+</defs>
+</svg>

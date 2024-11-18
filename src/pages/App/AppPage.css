@@ -1,0 +1,180 @@
+.dashboard-ticketSale-wrapper .footer-d {
+  position: inherit;
+}
+.dashboard-ticketSale-main {
+  padding: 0 0 62px;
+}
+.dashboard-ticketSale-block {
+  text-align: left;
+  padding: 0 3%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: var(--global-font-family) !important;
+}
+.dashboard-ticketSale-content {
+  width: 40%;
+}
+.dashboard-ticketSale-img {
+  width: 60%;
+}
+.dashboard-ticketSale-block ul {
+  list-style-type: none;
+  padding: var(--padding-0);
+}
+.dashboard-ticketSale-block ul li {
+  background: url("../../../public/dashboard-icon-list.svg") no-repeat;
+  font-size: var(--display-xs-size);
+  color: var(--twotixx-text-midnight-blue);
+  font-weight: var(--font-w-500);
+  margin: 0 0 10px;
+  padding: 0 0 0 42px;
+}
+.dashbord-frame {
+  width: var(--full-width);
+  display: block;
+}
+.dashboard-ticketSale-block h2 {
+  font-size: 64px;
+  font-weight: var(--font-w-600);
+  line-height: var(--padding-8xl);
+}
+.dashboard-ticketSale-block h2 span {
+  display: block;
+  color: var(--Primary-Mid-Blue);
+}
+.appGoogle-btns .btn-download {
+  display: block;
+  max-width: var(--full-width);
+  height: 44px;
+}
+.appGoogle-btns {
+  margin: 40px 0 0;
+}
+.appGoogle-btns a {
+  display: inline-block;
+  margin: 0 0 0 16px;
+}
+.appGoogle-btns a:first-child {
+  margin: var(--padding-0s);
+}
+.dashboard-ticketSale-position .dashboard-ticketSale-content {
+  order: 2;
+}
+.dashboard-ticketSale-position .dashboard-ticketSale-img {
+  order: 1;
+}
+.turbocharge-block {
+  background: var(--surface-highlight-light);
+  border-radius: 8px;
+  padding: var(--display-xs-size);
+  display: flex;
+  margin: 40px 0 0;
+  box-shadow: 0px 4px 6.5px 0px rgba(0, 0, 0, 0.02),
+    0px 20px 40px 0px rgba(0, 0, 0, 0.04);
+}
+.turbocharge-block-rht {
+  padding: 0 0 0 15px;
+}
+.turbocharge-block-rht h3 {
+  margin: var(--padding-0s);
+  font-size: var(--body-xl-size);
+  font-weight: var(--font-w-600);
+  color: var(--twotixx-text-midnight-blue);
+  line-height: var(--padding-28px);
+  max-width: 410px;
+}
+.turbocharge-block-rht h3 span {
+  background: linear-gradient(272.38deg, #EB00FF 0%, #FFC700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.turbocharge-block-rht p {
+  margin: var(--padding-0s);
+}
+.turbochargeIcon {
+  width: var(--display-lg-size);
+  height: var(--display-lg-size);
+}
+.turbocharge-block-rht p {
+  color: var(--twotixx-text-midnight-blue);
+  font-size: var(--body-md-size);
+  line-height: var(--display-xs-size);
+  font-weight: var(--font-w-500);
+  margin: 22px 0 0;
+  max-width: 410px;
+}
+
+/* css start 23-10-24 */
+
+    .dashboard-ticketSale-block.container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0;
+      gap: 0px;
+    }
+
+    .dashboard-ticketSale-block.container .dashboard-ticketSale-content {
+      width: 38%;
+  }
+
+  .dashboard-ticketSale-block.container .dashboard-ticketSale-img {
+      width: 62%;
+  }
+
+/* css end 23-10-24 */
+
+@media screen and (max-width: 1600px) {
+  .dashbord-frame {
+    min-height: 721px;
+    max-height: 721px;
+  }
+  .dashbord-frame.dashbord-frame2 {
+    min-height: 746px;
+    max-height: 746px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dashboard-ticketSale-content,
+  .dashboard-ticketSale-img {
+    width: var(--full-width);
+  }
+  .dashboard-ticketSale-position .dashboard-ticketSale-content {
+    order: 1;
+  }
+  .dashboard-ticketSale-position .dashboard-ticketSale-img {
+    order: 2;
+  }
+  .dashboard-ticketSale-main {
+    padding: 0 0 40px;
+  }
+  .dashbord-frame,
+  .dashbord-frame.dashbord-frame2 {
+    min-height: inherit;
+    max-height: inherit;
+  }
+  .turbocharge-block {
+    margin: 25px 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dashboard-ticketSale-block h2 {
+    font-size: var(--padding-f-s);
+    line-height: 56px;
+  }
+  .appGoogle-btns {
+    display: flex;
+  }
+  .appGoogle-btns .btn-download {
+    /* max-width: var(--full-width);
+    height: 54px; */
+  }
+  .turbocharge-block-rht p {
+    margin: 16px 0 0;
+  }
+  .dashbord-frame.dashbord-frame2 {
+    margin: 22px 0 0;
+  }
+}

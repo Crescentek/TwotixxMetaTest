@@ -1,0 +1,36 @@
+.ticket-guard-card-organizer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 526px;
+    height: 599px;
+    border-radius: 40px;
+    padding: 40px 32px;
+}
+
+.ticket-guard-card-organizer-container-text1{
+    font-family: 'Libre Franklin';
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    color: var(--yellow);
+    margin-top: 280px;
+}
+.ticket-guard-card-organizer-container-text2{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--Twotixx-Text-Ice-White);
+    margin-top: 0px;
+    text-align: center;
+}
+.ticket-guard-card-organizer-container-text3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--Twotixx-Text-Ice-White);
+    margin-top: 20px;
+    text-align: center;
+}

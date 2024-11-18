@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --global-font-family: "Poppins";
+
+  /* width */
+  --margin-top: 5%;
+  --box-width: 306px;
+  --half-width: 50%;
+  --full-width-90: 90%;
+  --full-width: 100%;
+  --height-125: 125%;
+  --full-height-150: 150%;
+
+  /* font sizes */
+  --body-xs-size: 12px;
+  --body-sm-size: 14px;
+  --body-md-size: 16px;
+  --font-size: 17px;
+  --body-lg-size: 18px;
+  --body-xl-size: 20px;
+  --display-xs-size: 24px;
+  --display-sm-size: 30px;
+  --display-md-size-32: 32px;
+  --display-md-size: 36px;
+  --display-lg-md: 40px;
+  --display-lg-size: 48px;  
+  --body-xl-52: 52px;
+  --body-xl-56: 56px;
+  --body-xl-64: 64px;
+  --body-lg-size-80: 80px;
+
+  /* font weight */
+  --font-w-400: 400;
+  --font-w-500: 500;
+  --font-w-600: 600;
+  --font-w-700: 700;
+
+  /* Colors */
+  --monochrome-white: #fff;
+  --Twotixx-Text-Ice-White: #FFF;
+  --Twotixx-Background-Ice-White: #fff;
+  --text-heading-tertiary: #FFF;
+  --Twotixx-Primary-Ice-White: #FFF;
+  --monochrome-black: #000;
+  --monochrome-light-grey: #f7f7f7;
+  --gray-200: #eaecf0;
+  --monochrome-grey: #e9e9e9;
+  --Primary-Mid-Blue: #0057FF;
+  --text-heading-primary: #002366;
+  --twotixx-borders-silver: #ebebeb;
+  --Twotixx-Borders-Silver: #ebebeb;  
+  --twotixx-text-midnight-blue: #0d2244;
+  --Twotixx-Text-Midnight-Blue: #0d2244;
+  --twotixx-notifications-light-information-blue: #eaf1fc;
+  --twotixx-white: #fbfbfb;
+  --monochrome-dark-grey-2: #a7a7a7;
+  --color-plum: #f8b4e4;
+  --gray-900: #101828;
+  --app-header-color: #282c34;
+  --app-link-color: #61dafb;
+  --twotixx-grey: #767676;
+  --twotixx-turbo-blue: #4693f5;
+  --red: rgb(252, 1, 1);
+  --twotix-border-gray: #cacaca;
+  --twotix-light-blue: #c0d5f6;
+  --Twotixx-Primary-Sky-Blue: #c0d5f6;
+  --light-blue: #4688f5;
+  --twotix-pink: #cc0ccf;
+  --Twotixx-Secondary-Fuchsia: #CC0CCF;
+  --surface-error-subtle: #fef2f3;
+  --text-error-2: #ea343d;
+  --surface-disabled: #dcdfe4;
+  --border-primary: #DCDFE4;
+  --text-disabled: #626f86;
+  --Twotixx-Text-Error-Red: #dd3139;
+  --surface-information-subtle: #f0f6fe;
+  --color-blue-50: #F0F6FE;
+  --text-information-2: #3169df;
+  --surface-highlight-subtle: #fcf3f9;
+  --text-highlight: #C63C8A;
+  --text-heading-primary: #1B2750;
+  --text-heading-secondary: #3A7DE9;
+  --icon-primary: #3A7DE9;
+  --body-title: #44546F;
+  --surface-primary-light : #E5EEFF;
+  --surface-secondary: #F1F2F4;
+  --label-success: #097E07;
+  --surface-highlight-light:#F7E8FA;
+  --custom-prg-color:#002366;
+  --yellow: #DBFF00;
+  
+  /* Gradients */
+  --Twotixx-Background-Electric-Gradient: linear-gradient(272deg, #46AFF5 0%, #4688F5 100%);
+  
+  /* Gaps */
+  --gap-9xs: 4px;
+  --gap-7xs: 6px;
+  --spacing-xs: 8px;
+  --gap-5xs: 8px;
+  --gap-xs: 12px;
+  --gap-xs-12: 12px;
+  --gap-base: 16px;
+  --gap-xl: 20px;
+  --gap-5xl: 24px;
+  --gap-13xl: 32px;
+  --gap-23xl: 42px;
+  --gap-48: 48px;
+  --gap-31xl: 50px;
+  --gap-45xl: 64px;
+
+  /* Paddings */
+  --padding-0s: 0;
+  --padding-0: 0px;  
+  --padding-btn: 0 0 0 10px;
+  --padding-btn-1: 0 10px 0 0;
+  --padding-border-15x: 0 15px 15px;
+  --padding-border: 1px 0px 0px 0px;
+  --padding-11xs: 2px;
+  --padding-5xs: 8px;
+  --padding-xs: 8px;
+  --padding-9: 9px;
+  --padding-3xs: 10px;
+  --padding-sm-12: 12px;
+  --padding-md: 12px;
+  --padding-13px: 13px;
+  --padding-sm: 14px;
+  --padding-15x: 15px;
+  --padding-base: 16px;
+  --padding-9xl: 16px;
+  --padding-xl: 20px;
+  --padding-5xl: 24px;
+  --padding-mx: 24px 13px;
+  --padding-25x: 25px;
+  --padding-26px: 26px;
+  --padding-28px: 28px;
+  --padding-30: 30px;
+  --padding-13xl: 32px;
+  --padding-14xl: 32px 0 0;
+  --padding-36px: 36px;
+  --padding-38px: 38px;
+  --padding-f-s: 40px;
+  --padding-45s: 45px;
+  --padding-29xl: 48px;
+  --padding-49: 49px;
+  --padding-56px: 56px;
+  --padding-57px: 57px;
+  --padding-45xl: 64px;
+  --padding-66px: 66px;
+  --padding-8xl: 80px;
+  --padding-90: 90px;
+  --padding-72: 72px;
+  --padding-72px: 72px;
+  --padding-115px: 115px;
+  --padding-112px: 115px;
+  --padding-128px: 128px;
+  --padding-189px: 189.5px;
+  --padding-182px: 182px;
+  --padding-197px: 197.5px;  
+  --padding-200px: 200px;  
+  --padding-300px: 300px;
+  --padding-521px: 521px;
+  --padding-910px: 960px;  
+  --padding-1226px: 1226px;
+  --padding-1280px: 1280px;
+  --padding-1440px: 1440px;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+  --br-6xs: 7px;
+  --br-9xs: 4px;
+  --br-5xs: 8px;
+  --br-16: 16px;
+  --sizing-300: 16px;
+  --br-24: 24px;
+  --br-m: 8px 8px 0px 0px;
+
+  /* line height */
+  --line-hight-ssm: 24px;
+  --line-hight-sm: 28px;
+  --line-hight-32: 32px;
+  --line-hight-36: 36px;
+  --line-hight-40: 40px;
+  --line-hight-md: 56px;
+  --line-hight-70: 70px;
+  --line-hight-72: 72px;
+  --line-hight-80: 80px;
+  --line-hight-90: 90px;
+  --line-hight-lg: 96px;
+  --line-hight-100: 100px;
+
+  /* box shadows */
+  --shadow-xs: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0px 4px 16px 0px rgba(0, 0, 0, 0.24);
+  --shadow-xxl: 0px -2px 8px 0px rgba(0, 0, 0, 0.24);
+  --shadow-success-body: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  --shadow-common: 0px 1.85px 3.15px 0px #00000004, 0px 8.15px 6.52px 0px #00000007, 0px 20px 13px 0px #00000009, 0px 38.52px 25.48px 0px #0000000B, 0px 64.81px 46.85px 0px #0000000E, 0px 100px 80px 0px #00000012;
+}

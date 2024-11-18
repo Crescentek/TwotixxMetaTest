@@ -1,0 +1,103 @@
+.terms-service-main .footer-d {
+  position: inherit;
+}
+
+.terms-service-block h2,
+.terms-service-block h3,
+.terms-service-block h4,
+.terms-service-block p {
+  margin: var(--padding-0);
+}
+
+.terms-service-block {
+  padding: 55px 3%;
+  text-align: left;
+  font-family: var(--global-font-family) !important;
+}
+.terms-service-block h2 {
+  font-size: 64px;
+  color: var(--twotixx-text-midnight-blue);
+  font-weight: var(--font-w-500);
+}
+
+.terms-service-inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0 0;
+}
+.terms-service-inner-lft {
+  width: 50%;
+  padding: 0 1% 0 0;
+}
+.terms-service-inner-rht {
+  width: 50%;
+  padding: 0 0 0 1%;
+}
+
+.terms-service-item-inner {
+  display: flex;
+  padding: 22px 0 0;
+}
+
+.terms-service-item {
+  background: var(--monochrome-white);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.04);
+  padding: 32px 24px;
+  border: 1px solid var(--twotixx-borders-silver);
+  border-radius: 8px;
+  margin: 0px 0 32px;
+}
+.terms-service-item h3 {
+  font-size: var(--padding-5xl);
+  font-weight: var(--font-w-600);
+  line-height: var(--padding-13xl);
+  color: var(--Primary-Mid-Blue);
+}
+
+.terms-service-item-lft h4 {
+  font-size: var(--padding-xl);
+  font-weight: var(--font-w-600);
+}
+.terms-service-item-rht {
+  padding: 0 0 0 16px;
+}
+.terms-service-item-rht p {
+  font-size: var(--padding-xl);
+  font-weight: var(--font-w-400);
+}
+
+.terms-service-img {
+  width: var(--full-width);
+  /* height: auto; */
+}
+
+.termBottom-content {
+  background: var(--twotixx-notifications-light-information-blue);
+  padding: var(--padding-5xl);
+  border-radius: 8px;
+}
+.termBottom-content p {
+  font-size: var(--padding-base);
+  line-height: var(--padding-5xl);
+  font-weight: var(--font-w-400);
+}
+
+@media screen and (max-width: 767px) {
+  .terms-service-block {
+    padding: 46px 3%;
+  }
+  .terms-service-block h2 {
+    font-size: var(--padding-f-s);
+    line-height: 56px;
+  }
+  .terms-service-inner {
+    padding: 50px 0 0;
+  }
+  .terms-service-inner-lft {
+    width: var(--full-width);
+  }
+  .terms-service-inner-rht {
+    width: var(--full-width);
+    padding: 45px 0 0 0;
+  }
+}

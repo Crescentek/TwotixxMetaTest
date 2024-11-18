@@ -1,0 +1,92 @@
+.modal-overlay {
+  position: fixed;
+  top: var(--padding-0s);
+  left: var(--padding-0s);
+  width: var(--full-width);
+  height: var(--full-width);
+  background-color: var(--monochrome-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--monochrome-white);
+  padding: var(--padding-xl);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: var(--full-width);
+  max-width: var(--padding-1440px);
+  min-width: var(--padding-300px);
+  max-height: var(--full-width);
+  overflow-y: auto;
+  height: var(--full-width);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  border: none;
+  background: none;
+  font-size: var(--body-md-size);
+  cursor: pointer;
+}
+
+.modal-content .desktop3 {
+  margin: var(--padding-0s) auto;
+  overflow: inherit;
+  height: var(--full-width);
+}
+.modal-content .pagination1 {
+  position: inherit;
+}
+
+.modal-top-logoClose {
+  width: var(--full-width);
+  max-width: 1208px;
+  margin: var(--padding-0s) auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  position: fixed;
+  top: var(--padding-0s);
+  left: 50%;
+  z-index: 9;
+  transform: translate(-50%, 0%);
+  background: var(--monochrome-white);
+  align-items: center;
+}
+.modal-content .MuiBox-root {
+  padding-top: 80px;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 600px) {
+  .modal-content {
+    max-width: var(--full-width);
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-content {
+    max-width: var(--full-width);
+    padding: var(--display-sm-size);
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal-top-logoClose {
+    width: var(--full-width);
+    left: var(--padding-0s);
+    transform: translate(0%, 0%);
+    padding: 15px 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal-content {
+    max-width: var(--full-width);
+  }
+}

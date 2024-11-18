@@ -1,0 +1,65 @@
+
+:root {
+  --light-color: #d3d3d3; 
+}
+
+
+.simple-button {
+  background-color: var(--Primary-Mid-Blue);
+  border: 1px solid var(--Primary-Mid-Blue);
+  border-radius: 50px;
+  color: var(--Twotixx-Text-Ice-White);
+  font-family: var(--global-font-family);
+  font-size: var(--body-md-size) !important;
+  font-weight: var(--font-w-500) !important;
+  line-height: 24px;
+  padding: var(--padding-sm-12) var(--padding-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.underline-custom {
+  border-bottom: 2px solid;
+}
+
+.navigation-parent .simple-button {
+  font-size: var(--body-md-size) !important;
+  padding: var(--padding-sm-12) var(--padding-base);
+  border: none !important;
+  line-height: 1.5em !important;
+}
+
+.select-tickets-responsive .simple-button {
+  padding: var(--padding-5xs) var(--display-md-size);
+  letter-spacing: 0.6px;
+}
+
+.button-icon {
+  width: var(--padding-5xl);
+  height: var(--padding-5xl);
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-right: 8px; /* Adjust if needed */
+}
+
+@media screen and (max-width: 600px) {
+  .simple-button {
+    padding: var(--padding-xs) var(--padding-md);
+    font-size: var(--body-md-size);
+  }
+
+  .button-icon {
+    width: var(--padding-xl);
+    height: var(--padding-xl);
+  }
+}
+

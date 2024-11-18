@@ -1,0 +1,17 @@
+.custom-step {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-3xs);
+  }
+  
+  .step-icon {
+    width: var(--padding-xl);
+    height: var(--padding-xl);
+  }
+  
+  .step-text {
+    letter-spacing: 0.02em;
+    line-height: var(--padding-xl);
+    font-size:var(--padding-sm);
+  }
+  

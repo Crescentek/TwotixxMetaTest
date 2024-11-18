@@ -1,0 +1,539 @@
+
+.appGoogle-btns-features .btn-download {
+    display: block;
+    max-width: var(--full-width);
+    height: 44px;
+  }
+  .appGoogle-btns-features {
+    margin: 13px 0 8px;
+    justify-content: center;
+
+  }
+  .appGoogle-btns-features a {
+    display: inline-block;
+    margin: 0 0 0 16px;
+  }
+  .appGoogle-btns-features a:first-child {
+    margin: var(--padding-0s);
+  }
+  .appGoogle-btns-features {
+    display: flex;
+  }
+
+  .accordion-content-inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .accordion-content-inside.open
+  {
+    align-items: center !important;
+  }
+
+  .accordion-content-inside span {
+    font-size: 20px;
+    margin-top: 4px;
+    
+}
+
+  @media (min-width: 768px) {
+    
+.accordion-content {
+    max-height: 500px !important;
+    cursor:default;
+}
+  
+    .accordion-title span {
+      display: none; /* Hide toggle icon on desktop */
+    }
+
+    .accordion-content-inside span {
+        display: none;
+    }
+  }
+ 
+.eventSoftware-sec{
+    background:#fff;
+    padding:0 11px;
+}
+
+.eventSoftware-sec .container, .twotixx-accordionTab-event-sec .container{
+    max-width:1296px;
+    margin:0 auto;
+    display:block;
+}
+
+.eventSoftware-text-block{
+    max-width:856px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.eventSoftware-text-block h2{
+    font-size:56px;
+    font-weight:600;
+    color:#002366;
+    line-height:72px;
+    margin:0;
+    
+}
+
+.eventSoftware-text-block h2 span{    
+    background: linear-gradient(to right, #FFC700 0%, #EB00FF 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+
+.feature-line {
+    background: #DCDFE4;
+    width: 48px;
+    height: 1px;
+    display: block;
+    margin:19px auto;
+}
+
+.eventSoftware-text-block p {
+    color: #002366;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 676px;
+    margin: 0 auto;
+    line-height:24px;
+}
+
+.eventSoftware-imgItem-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin:60px 0 0;
+    column-gap:2%;
+    row-gap:17px;
+    justify-content:center;
+}
+
+.eventSoftware-imgItem{
+    box-sizing:border-box;
+    background:#fff;
+    border-radius:25px;
+    box-shadow:0px 0px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width:32%;
+    
+}
+
+.eventSoftware-imgBlock-show{
+    background:linear-gradient(to bottom right, #ff5630, #ec0098);
+}
+
+.eventSoftware-imgItem:nth-child(2) .eventSoftware-imgBlock-show{
+    background:linear-gradient(to bottom right, #2a61ff, #c2019a);
+}
+.eventSoftware-imgItem:nth-child(2) .eventSoftware-item-description .badge{
+    background:#E6F2E6;
+    color:#097E07;
+}
+
+.eventSoftware-imgItem:nth-child(3) .eventSoftware-imgBlock-show{
+    background:linear-gradient(to bottom right, #81fe35, #1b6cff);
+}
+.eventSoftware-imgItem:nth-child(3) .eventSoftware-item-description .badge{
+    background:#F7E8FA;
+    color:#B115D1;
+}
+
+.eventSoftware-imgBlock-show .imgSecondView{
+    width:100%;
+    display: block;
+}
+
+.eventSoftware-item-description{
+    padding:19px;
+}
+
+.eventSoftware-item-description .badge {
+    background: #E5EEFF;
+    color: #0057FF;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.eventSoftware-item-description h3 {
+    font-size: 24px;
+    color: #002366;
+    font-weight: 600;
+    margin: 19px 0 0;
+}
+
+.eventSoftware-item-description p{
+    color:#002366;
+    font-weight:400;
+    font-size:16px;
+    line-height:24px;
+    margin:15px 0 0;
+}
+
+
+/* start css 22-10-24 */
+
+.twotixx-accordionTab-event-sec{
+    background:#fff;
+    padding:80px 0;
+}
+
+.twotixx-eventTab-menu-wrapper{
+    
+    background: #fff;
+    top:0;
+    height: auto;
+    z-index: 8;
+    padding: 13px 0; 
+    transition:all 0.95s ease;  
+}
+
+.twotixx-eventTab-menu-wrapper.sticky{
+    border-bottom:1px solid #DCDFE4;
+    position:fixed;
+    top:80px;
+    width:100%;
+}
+
+.twotixx-eventTab-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1%;
+    row-gap: 15px;
+    padding:0 2%;
+    /* background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+    
+}
+
+.twotixx-eventTab-content {
+    padding:50px 11px 0;
+}
+
+.accordion {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: default;
+    background-color: #f9f9f9;
+  }
+  
+  .accordion-title h3 {
+    margin: 0;
+  }
+  
+  .accordion-content {
+    max-height: 48px; /* Limit to show only 2 lines initially (assuming ~24px per line) */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+    padding: 0 15px;
+    padding-top: 0;
+  }
+  
+  .accordion-content.open {
+    max-height: 500px; /* Increase height when accordion is opened */
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    padding: 15px 0;
+  }
+  
+  .accordion-title span {
+    font-size: 20px;
+  }
+
+  .twotixx-eventTab-content-item {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:4%;
+}
+
+.twotixx-eventTab-content-lft{
+    width:48%;
+}
+.twotixx-eventTab-content-rht{
+    width:48%;
+}
+
+.eventTab-content-imgBlock{
+    background: linear-gradient(-160deg, #f4018e 20%, #ff6131 50%, #002366 55%);
+    border-radius: 40px;
+    overflow: hidden;
+    position:sticky;
+    height:auto;
+    top:162px;
+}
+
+.consumerApp-item .eventTab-content-imgBlock{
+    background: linear-gradient(-160deg, #2e5dfd 20%, #ad01ce 50%, #002366 55%);
+}
+
+.venueApp-item .eventTab-content-imgBlock{
+    background: linear-gradient(-160deg, #0c92ff 20%, #adfe35 50%, #002366 55%);
+}
+
+.eventTab-content-imgBlock .img-fluid{
+    display: block;
+}
+
+
+.twotixx-eventTab-content .accordion{
+    border:none;
+}
+.twotixx-eventTab-content .accordion-title{
+    background-color:transparent;
+}
+
+.twotixx-eventTab-content .accordion-item {
+    border: 1px solid #DCDFE4;
+    margin: 0 0 22px;
+    padding:17px 17px 17px 75px;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    background:#fff;
+    transition:all 0.45s ease;
+
+}    
+
+.twotixx-eventTab-content .accordion-item:hover, .twotixx-eventTab-content .accordion-item.open{
+       background:#F1F2F4;  
+
+}
+
+.accordion-item-icon {
+    width: 45px;
+    height: 45px;
+    background: #0057FF;
+    border-radius: 50%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:19px;
+   
+}
+
+.accordion-item-icon .img-fluid {
+    max-width: 100%;
+    width: auto;  
+    position: initial;
+}
+
+.twotixx-eventTab-content .accordion-title{
+    padding:0 0 11px;
+}
+
+.twotixx-eventTab-content .accordion-content p {
+    padding: 0;
+    /* max-width: 450px; */
+    font-size:16px;
+}
+
+.twotixx-eventTab-content .accordion-content{
+    padding:0;
+    background-color:transparent;
+}
+
+.twotixx-eventTab-content .accordion-title h3 {
+    margin: 0;
+    color: #002366;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.twotixx-eventTab-content-lft .tittle{
+    font-size:40px;
+    font-weight:600;
+    color:#002366;
+}
+
+/* end css 22-10-24 */
+
+
+.eventTab-content-imgBlock .mobile-img{
+    display:none;
+}
+
+.twotixx-eventTab-menu .simple-button{
+    font-size:20px !important;
+}
+
+
+/* responsive css start  */
+
+@media(max-width:1023px){
+
+    .eventSoftware-text-block h2{
+        font-size:52px;
+        line-height:64px;
+    }   
+    .twotixx-eventTab-content-lft .tittle{
+        font-size:37px;
+        line-height:39px;
+    }
+
+    .twotixx-eventTab-content .accordion-title h3{
+        font-size:19px;
+    }
+
+    .accordion-item-icon{
+        width:40px;
+        height:40px;
+        padding: 8px;
+    }
+    .eventSoftware-item-description h3{
+        font-size:22px;
+        line-height:26px;
+    }
+
+}
+
+
+@media(max-width:767px){
+
+    .accordion-content-inside p {
+        overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits text to two lines */
+  line-height: 1.5em; /* Adjust based on your font size */
+  transition: max-height 0.3s ease; /* Smooth transition */
+    }
+
+    .accordion-content-inside.open p {
+        -webkit-line-clamp: unset; /* Show all text when accordion is opened */
+    }
+
+    .eventSoftware-sec{
+        padding:35px 11px 0;
+    }
+    .eventSoftware-text-block h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .twotixx-accordionTab-event-sec{
+        padding:42px 0;
+    }
+
+    .eventSoftware-imgItem-list{
+        column-gap:3%;
+    }
+    .eventSoftware-imgItem{
+        width:48%;
+    }
+
+    .twotixx-eventTab-content-lft{
+        width:100%;
+        order:2;
+    }
+
+    .twotixx-eventTab-content-rht{
+        width:100%;
+        order:1;
+    }
+
+    .eventTab-content-imgBlock{
+        height:382px;
+        border-radius:21px;
+    }
+
+    .eventTab-content-imgBlock .img-fluid {     
+        width:100%;
+    }
+
+    .eventTab-content-imgBlock .mobile-img{
+        display:block;
+    }
+
+    .eventTab-content-imgBlock .desktop-img{
+        display:none;
+    }
+
+    .twotixx-eventTab-menu .simple-button{
+        width:100% !important;
+    }
+
+
+  
+
+    .twotixx-eventTab-content-lft .tittle{
+        font-size:32px;
+    }
+
+    .twotixx-eventTab-menu-wrapper.sticky{
+        overflow: auto;
+        top:46px;
+    }
+    
+    .twotixx-eventTab-menu-wrapper.sticky .twotixx-eventTab-menu{
+        min-width: 560px;
+        flex-wrap:nowrap;
+    }
+    .twotixx-eventTab-menu-wrapper.sticky .twotixx-eventTab-menu .simple-button {
+        width: auto !important;
+        font-size:14px !important;
+        padding: 7px 15px !important;
+    }
+
+    .twotixx-eventTab-content .accordion-title h3{
+        font-size:16px;
+    }
+    .twotixx-eventTab-content .accordion-content p{
+        font-size:14px;
+    }
+    .accordion-content{
+        max-height:44px;
+    }
+
+    .twotixx-eventTab-content .accordion-content{
+        /* max-width:266px; */
+    }
+    .twotixx-eventTab-content .accordion-content p{
+        max-width:100%;
+    }
+
+    .eventSoftware-item-description h3{
+        font-size:20px;
+        line-height:28px;
+    }
+
+    .eventSoftware-item-description p{
+        font-size:14px;
+        line-height:20px;
+    }
+
+}
+
+
+
+@media(max-width:575px){
+
+    .eventSoftware-imgItem{
+        width:99%;
+    }
+
+}

@@ -1,0 +1,92 @@
+.countdown-timer svg {
+  width: 62px !important;
+  height: 62px !important;
+  display: block;
+}
+.countdown-timer svg circle {
+  fill: #f0f6fe;
+}
+
+.timeout-message-overlayBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(13, 34, 68, 0.7);
+  z-index: 99;
+}
+
+.timeout-message {
+  position: absolute;
+  background: #fff;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  width: 636px;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  padding: 40px 32px;
+  min-height: 376px;
+  text-align: center;
+}
+
+.iconTimer {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c0d5f6;
+  line-height: 80px;
+  margin: 0 auto;
+}
+.iconTimer .icon {
+  height: 32px;
+}
+.timer-content {
+  padding: 30px 0 0;
+}
+.timer-content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  line-height: 40px;
+  color: rgba(0, 35, 102, 1);
+}
+.timer-content p {
+  color: rgba(0, 35, 102, 1);;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.timerBtn {
+  padding: 10px 0 0;
+}
+.timerBtn .simple-button {
+  max-width: 328px !important;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .countdown-timer {
+    margin-left: initial;
+    margin-right: 0;
+  }
+
+  .timeout-message {
+    width: 92%;
+    padding: 32px;
+    min-height: 350px;
+  }
+  .timer-content {
+    padding: 28px 0 0;
+  }
+  .timer-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .timer-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,223 @@
+.payment-form-container h2 {
+  color: #333;
+  text-align: center;
+}
+
+.payment-form-container p {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.payment-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form-container input[type="text"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .pay-btn {
+  margin: 32px 39px 0px 39px;
+} */
+
+  /* margin-top: 32px !important; */
+
+/* .simple-button {
+  gap: 8px;
+  display: flex !important;
+} */
+
+
+.payment-form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.payment-form-container button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.payment-form-container button:hover {
+  background-color: rgba(0, 87, 255, 1);
+}
+
+.payment-form-container a {
+  color: rgba(0, 87, 255, 1);
+  text-decoration: none;
+}
+
+.payment-form-container a:hover {
+  text-decoration: underline;
+}
+
+.customCardPostcodeCont {
+  margin-bottom: 32px;
+}
+
+.customCardPostcodeCont .cutomCardCont {
+  background-color: #fff;
+  margin: 0;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  line-height: 22px;
+  border: 1px solid #dcdfe4;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.customCardPostcodeCont .cutomCardCont .cardInput {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  line-height: 22px;
+  border: none;
+  border-radius: 0;
+}
+
+.customCardPostcodeCont .cutomCardCont .cardInput:focus {
+  outline: none;
+}
+
+.customCardPostcodeCont .cutomCardCont .cardInput.cardNumber {
+  background: url(../../../public/cards.svg) no-repeat left center;
+  padding-left: 36px;
+  width: calc(100% - 138px);
+}
+
+.customCardPostcodeCont .cutomCardCont .cardInput.cardExp {
+  width: 54px;
+}
+
+.customCardPostcodeCont .cutomCardCont .cardInput.cardCvc {
+  width: 36px;
+}
+
+.customCardPostcodeCont .cutomPostcodeCont .postcodeInput {
+  margin: 0;
+  padding: 16px;
+  display: block;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #767676;
+  line-height: 22px;
+  border: 1px solid #dcdfe4;
+  border-top: none;
+}
+
+.customCardPostcodeCont .cutomPostcodeCont .postcodeInput:focus {
+  outline: none;
+}
+
+.cardPaymentCheckCont {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+  color: rgba(0, 35, 102, 1);
+}
+
+.cardPaymentCheckCont .checkboxAgreeUpdates {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  min-width: 28px;
+  background: url(../../../public/checkbox-uncheck.svg) no-repeat left center/24px 24px;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.cardPaymentCheckCont .checkboxAgreeUpdates:checked {
+  background: url(../../../public/checkbox-check-green.svg) no-repeat left center/24px 24px;
+}
+
+.paymentCardCont .titleCont {
+  text-align: left !important;
+  color: rgba(0, 35, 102, 1);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  /* margin: 0 0 16px 0 !important; */
+  margin-top: 16px !important;
+}
+
+.paymentCardCont .subTitleCont {
+  color: rgba(0, 35, 102, 1);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left !important;
+}
+
+.content11 .customer-verification {
+  width: 100%;
+}
+
+.customer-verification .paymentTopStep {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  gap: 16px;
+}
+
+.customer-verification .paymentTopStep .cardIconsCont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 7.385px;
+}
+
+.customer-verification .paymentTopStep .cardIconsCont .cardIcon {
+  border-radius: 2px;
+  border: 0.923px solid #dcdfe4;
+  background: #fff;
+  width: 42px;
+  height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .payment-form-container {
+    max-width: 100% !important;
+  }
+
+  .continew-btn{
+    width: 100%;
+    display: inline-block !important;
+  }
+  .pay-btn{
+    width: 100%;
+    display: inline-block !important;
+  }
+}

@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--global-font-family) !important;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.css-uodgbc-MuiChip-label {
+  font-family: var(--global-font-family);
+}
+
+
+.simple-button:hover{
+  background-color:#0046CC !important;
+  color:#fff !important;
+}
+
+.simple-button.secondary-hover:hover {
+  /* background-color: #F1F2F4 !important;
+  color: var(--Primary-Mid-Blue) !important; */
+
+  background-color: #EBEBEB !important;
+  color: #767676 !important;
+  cursor: unset;
+}
+
+.sizesm-iconfalse-colorgra{
+  border-radius:0px !important;
+  background-color:transparent !important;
+  padding:0 !important;
+}
+.sizesm-iconfalse-colorgra .simple-button {
+  border-radius: 50px !important;
+  padding: 10px 24px !important;
+  height: auto !important;
+  font-size: 16px !important;
+}
+.sizesm-iconfalse-colorgra .simple-button:hover{
+  background-color:#0046CC !important;  
+}
+
+.gm-style-iw.gm-style-iw-c,
+.gm-style-iw-tc {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows {
+  -moz-appearance: textfield;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: var(--app-header-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--monochrome-white);
+}
+.App-link {
+  color: var(--app-link-color);
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MuiStepper-root .MuiStepLabel-labelContainer .MuiStepLabel-label {
+  font-family: var(--global-font-family) !important;
+  font-size: var(--body-md-size) !important;
+  font-weight: var(--font-w-400);
+  color: var(--twotixx-grey);
+}
+.MuiStepper-root .MuiStepLabel-labelContainer .MuiStepLabel-label.Mui-active {
+  color: var(--monochrome-black);
+}
+.MuiStepper-root .css-1bw0nnu-MuiStep-root {
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.content11 .makeStyles-root-5 .MuiFormControl-root {
+  margin: 4px 0 0;
+}
+.p-content7 .makeStyles-root-8 .MuiFormControl-root {
+  margin: 2px 0 2px;
+}
+.makeStyles-label-15 {
+  font-family: var(--global-font-family) !important;
+}
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px 14px !important;
+}
+.p-content7 .MuiGrid-root .rccs {
+  width: var(--full-width);
+}
+.p-content7 .MuiGrid-root .rccs .rccs__card {
+  width: var(--full-width);
+}
+.popupTitle-text {
+  padding-top: 32px;
+  margin-bottom: 2%;
+}
+.content11 .makeStyles-root-13 .MuiFormControl-root {
+  margin: 4px 0 0;
+}
+.content11 .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+  padding-top: 14px;
+}
+.supporting-text {
+  font-size: var(--padding-xl);
+}
+
+.user-selection-and-pricing .total-item-count .MuiSvgIcon-root {
+  position: relative;
+  top: 6px;
+}
+
+@media (max-width: 1440.98px) {
+  body .container2,
+  body .section,
+  body .container1,
+  body .container4 {
+    width: var(--full-width);
+    padding-left: var(--padding-13xl);
+    padding-right: var(--padding-13xl);
+  }
+}
+@media (max-width: 1024.98px) {
+  body .content1 {
+    padding: 22px;
+  }
+  body .content2.select-tickets-responsive {
+    top: inherit;
+    bottom: var(--padding-0s);
+    width: var(--full-width);
+    max-width: var(--full-width);
+    position: fixed;
+    z-index: 2;
+    border-width: 1px 0px 0px 0px;
+    border-radius: var(--padding-0);
+    background: var(--monochrome-white);
+    left: var(--padding-0s);
+  }
+  .user-selection-and-pricing {
+    padding: var(--padding-15x);
+  }
+
+  .select-tickets-responsive .simple-button {
+    margin-bottom: var(--padding-0);
+  }
+  .modal-content .MuiTypography-root .desktop3 .modal2 {
+    order: 3;
+    position: inherit;
+    left: var(--padding-0s);
+    top: var(--gap-31xl);
+    width: var(--full-width);
+  }
+  .modal-content .MuiTypography-root .desktop3 .nav-d2 {
+    order: 1;
+  }
+  .modal-content .MuiTypography-root .desktop3 .pagination2 {
+    order: 2;
+  }
+
+  .modal-content .MuiTypography-root .desktop3 .modal2 .content-parent {
+    width: 100%;
+    /* border: none; */
+    /* box-shadow: inherit; */
+    /* padding: 0; */
+  }
+
+  body .footer-d {
+    padding-bottom: 200px !important;
+  }
+  
+  .section .container .content {
+    width: var(--full-width);
+  }
+  body .container {
+    align-items: center;
+  }
+  body .modal-content {
+    padding: var(--padding-0);
+  }
+  .modal-content .desktop2 {
+    padding: var(--padding-border-15x);
+  }
+  .modal-content .payment {
+    padding: var(--padding-border-15x);
+  }
+  body .footer-d {
+    padding-bottom: 120px !important;
+  }
+  body .rht-block-home {
+    width: var(--full-width);
+  }
+  body .content2.select-tickets-responsive {
+    top: inherit;
+    bottom: var(--padding-0s);
+    border-radius: var(--padding-0);
+    left: var(--padding-0);
+    border-width: 1px 0px 0px 0px;
+    padding: 24px 13px;
+    box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  body .container2,
+  body .section,
+  body .container1,
+  body .container4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .supporting-text4 p {
+    margin: 32px 0 40px !important;
+}
+  body .container,
+  body .content {
+    padding-left: var(--padding-0);
+    padding-right: var(--padding-0);
+  }
+
+  body .content2.select-tickets-responsive {
+    top: inherit;
+    bottom: var(--padding-0s);
+    border-radius: var(--padding-0);
+    left: var(--padding-0);
+    background: var(--monochrome-white);
+    border-width: 1px 0px 0px 0px;
+    padding: 24px 13px;
+    box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 8px 8px 0px 0px;
+  }
+  body .section {
+    padding-top: var(--padding-3xs);
+  }
+  body .heading5 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  body .navBarLogo,
+  body .iconnavBarLogo {
+    height: 32px;
+    width: 32px;
+  }
+  .share-01-parent {
+    padding: 10px 0 0;
+  }
+  .heading-and-supporting-text .marker-pin-03-parent {
+    align-items: flex-start;
+  }
+  body .heading-and-supporting-text1 {
+    gap: 0;
+    padding: 0;
+  }
+  .sizesm-iconfalse-colorgra .text6 {
+    line-height: 25px;
+    padding: 0 22px;
+  }
+  .content .heading-and-supporting-text {
+    padding-top: 25px;
+  }
+  body .content1 {
+    margin: 0;
+  }
+  .select-tickets-responsive .heading-and-badge .heading2 {
+    font-size: 24px;
+    line-height: 30px;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+  }
+  .select-tickets-responsive .heading-and-badge .heading2 .ticketprice {
+    font-size: 32px;
+    margin: 0;
+  }
+  body .mobile-app-store-badge {
+    width: 42%;
+  }
+  body .logo-and-supporting-text,
+  .mobile-app-store-badge,
+  body .mobile-app-store-badge1 {
+    width: var(--full-width);
+  }
+  body .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--padding-0);
+  }
+  body .footer-links .buttonlglink-graydefaultfa {
+    gap: var(--padding-0);
+    margin: 5px 0px;
+    padding: 2px 0px;
+  }
+  body .footer-links .buttonlglink-graydefaultfa div {
+    font-family: var(--global-font-family) !important;
+  }
+  body .footer-links .buttonlglink-graydefaultfa .placeholder-icon7 {
+    display: none;
+  }
+  .footer-d .app-store-actions {
+    width: var(--full-width);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px 0 0;
+  }
+  .footer-d .app-store-actions .heading4 {
+    width: var(--full-width);
+  }
+  .footer-d .app-store-actions .actions {
+    width: var(--full-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer-d .content5 {
+    padding: 25px 0 36px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-d .content5 .footer-text {
+    order: 2;
+  }
+  .footer-d .content5 .social-icons {
+    order: 1;
+  }
+  body .section {
+    padding-bottom: var(--padding-45s);
+  }
+  .modal-content .user-selection-and-pricing {
+    flex-direction: row;
+  }
+  .modal-content .content-parent .user-selection-and-pricing {
+    width: var(--full-width);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--padding-0);
+  }
+  body .footer-d {
+    /* padding: 30px 15px 100px !important; */
+    padding: 40px 16px !important;
+    gap: var(--display-lg-size);
+  }
+  body .footer-d .container1,
+  body .footer-d .container2 {
+    padding-left: var(--padding-0);
+    padding-right: var(--padding-0);
+  }
+  .modal-content .user-selection-and-pricing .MuiButtonBase-root {
+    width: var(--display-md-size);
+    height: var(--display-md-size);
+    margin: var(--padding-0);
+  }
+  .modal-content .content25 {
+    padding: 10px 15px;
+  }
+  .modal-content .user-selection-and-pricing .supporting-text29 {
+    font-size: var(--padding-base);
+  }
+  .modal-content .content-parent .content25 .simple-button {
+    margin-bottom: var(--br-8xs);
+  }
+  .modal-content .desktop3 {
+    height: var(--full-width);
+  }
+  .modal-content .desktop2 .modal-group {
+    flex-direction: column;
+    gap: var(--display-md-size);
+  }
+  .modal-content .desktop2 .modal-group .modal1,
+  .modal-content .desktop2 .modal-group .content11 {
+    width: var(--full-width);
+  }
+  .modal-content .pagination1 {
+    position: inherit;
+    padding: var(--br-8xs);
+    gap: var(--gap-5xl);
+    margin: var(--padding-14xl);
+  }
+  body .modal-content .desktop2 .modal-group {
+    margin: var(--padding-14xl);
+  }
+  .modal-content .payment .modal-parent {
+    flex-direction: column;
+    padding: var(--padding-14xl);
+  }
+  .modal-content .MuiTypography-root .desktop3 .modal2,
+  .modal-content .MuiTypography-root .desktop3 .modal2 {
+    top: 26px !important;
+  }
+  .modal-content .pay-pagination {
+    padding: var(--br-8xs);
+    gap: var(--gap-5xl);
+  }
+  .modal-content .payment .MuiGrid-root {
+    margin: var(--padding-0);
+    width: var(--full-width);
+  }
+  .modal-content .payment .MuiGrid-item {
+    padding: 0 0;
+  }
+  .modal-content .payment .modal-parent {
+    gap: var(--display-lg-size);
+  }
+  .nav-d {
+    height: 48px !important;
+  }
+  body .header {
+    height: auto;
+  }
+}
