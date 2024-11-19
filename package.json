@@ -37,6 +37,7 @@
     "react-router-dom": "^6.19.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-snap": "^1.23.0",
     "react-sticky-el": "^2.1.0",
     "react-toastify": "^10.0.5",
     "redux": "^4.2.1",
@@ -50,11 +51,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "dev": "vercel dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "npm run build&&node server/index.js"
+  },
+  "reactSnap": {
+    "inlineCss": true
   },
   "eslintConfig": {
     "extends": [

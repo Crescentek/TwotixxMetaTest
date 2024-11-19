@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { renderToNodeStream } from 'react-dom/server';
+import { renderToNodeStream } from "react-dom/server";
 import "./Home.css";
 import "../App/AppPage.css";
 import Navbar from "../../components/Navbar/Navbar";
@@ -62,7 +62,7 @@ function Home() {
 
   async function randomWait() {
     await new Promise((resolve) =>
-      setTimeout(resolve, Math.floor(Math.random() * 500))
+      setTimeout(resolve, Math.floor(Math.random() * 500)),
     );
     return;
   }
@@ -148,19 +148,22 @@ function Home() {
   const helmetContext = {};
 
   return (
-    <HelmetProvider context={helmetContext}>
-    <Helmet 
-//     onChangeClientState={newState => {
-// // Add description
-// const metaDescription = document.querySelector(
-// 'meta[name="og:description"]'
-// );
-// if (metaDescription) {
-// metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
-// }
-// }}
->
-        <title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.</title>
+    <>
+      <Helmet
+      //     onChangeClientState={newState => {
+      // // Add description
+      // const metaDescription = document.querySelector(
+      // 'meta[name="og:description"]'
+      // );
+      // if (metaDescription) {
+      // metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
+      // }
+      // }}
+      >
+        <title>
+          Twotixx | Your Gateway to Exciting Events with Smart Digital
+          Ticketing.
+        </title>
         <link rel="canonical" href="https://twotixx-meta-test.vercel.app/" />
         <meta name="description" content="Home - Description" />
         <meta name="og:title" content="Home - OG Title" />
@@ -168,69 +171,72 @@ function Home() {
         <meta name="og:image" content="https://picsum.photos/id/237/200/300" />
         <meta name="og:url" content="https://twotixx-meta-test.vercel.app/" />
       </Helmet>
-    <div className="terms-service-main">
-      <Navbar />
-      <section className="home-banner">
-        <div className="header-content">
-          <div className="header-content-lft">
-            <h1 className="bannerTitle">
-              Ticketing, <br></br>
-              <span>reimagined.</span>
-            </h1>
-            <p className="bannerP">
-              Test2 - Unforgettable live events. Easy ticket management and upfront
-              pricing. We make going out worry-free.
-            </p>
-            {/* <div style={{marginRight:"464px"}}> */}
-            {/* <CommonButton text="Download Twotixx" onClick={handleTowtixDownload} /> */}
-            <div style={{ marginTop: 0 }} className="appGoogle-btns">
-              <a
-                href="https://apps.apple.com/in/app/twotixx/id6451201695"
-                target="_blank"
-              >
-                <img
-                  className="btn-download"
-                  src="/appStore-btn.svg"
-                  alt="App Store Logo"
-                />
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.twotixx"
-                target="_blank"
-              >
-                <img
-                  className="btn-download"
-                  src="/googlePlay-store-btn.svg"
-                  alt="Google Play Store Logo"
-                />
-              </a>
+      <div className="terms-service-main">
+        <Navbar />
+        <section className="home-banner">
+          <div className="header-content">
+            <div className="header-content-lft">
+              <h1 className="bannerTitle">
+                Ticketing, <br></br>
+                <span>reimagined.</span>
+              </h1>
+              <p className="bannerP">
+                Test2 - Unforgettable live events. Easy ticket management and
+                upfront pricing. We make going out worry-free.
+              </p>
+              {/* <div style={{marginRight:"464px"}}> */}
+              {/* <CommonButton text="Download Twotixx" onClick={handleTowtixDownload} /> */}
+              <div style={{ marginTop: 0 }} className="appGoogle-btns">
+                <a
+                  href="https://apps.apple.com/in/app/twotixx/id6451201695"
+                  target="_blank"
+                >
+                  <img
+                    className="btn-download"
+                    src="/appStore-btn.svg"
+                    alt="App Store Logo"
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.twotixx"
+                  target="_blank"
+                >
+                  <img
+                    className="btn-download"
+                    src="/googlePlay-store-btn.svg"
+                    alt="Google Play Store Logo"
+                  />
+                </a>
+              </div>
+              {/* </div> */}
             </div>
-            {/* </div> */}
-          </div>
-          <div className="header-content-rht" style={{ position: "relative" }}>
-            {/* {!videoLoaded && (
+            <div
+              className="header-content-rht"
+              style={{ position: "relative" }}
+            >
+              {/* {!videoLoaded && (
               <div className="loader-video">
                 <Loader />
               </div>
             )} */}
-            <video
-              src="/homevideo2.mp4"
-              alt="home-video"
-              className="video-fluid"
-              loop
-              muted
-              playsInline
-              autoPlay
-              controls
-              onLoadedData={() => setVideoLoaded(true)}
-              onContextMenu={(e) => e.preventDefault()}
-              style={{ height: "auto", zIndex: 1 }}
-            />
+              <video
+                src="/homevideo2.mp4"
+                alt="home-video"
+                className="video-fluid"
+                loop
+                muted
+                playsInline
+                autoPlay
+                controls
+                onLoadedData={() => setVideoLoaded(true)}
+                onContextMenu={(e) => e.preventDefault()}
+                style={{ height: "auto", zIndex: 1 }}
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* <section className="section tending-events-sec homeTrendingEventsSection">
+        {/* <section className="section tending-events-sec homeTrendingEventsSection">
         <div className="tending-events-title">
           <h2>Trending events</h2>
           <CommonButton text="  View all" onClick={handleContinueClick} />
@@ -320,169 +326,169 @@ function Home() {
         </div>
       </section> */}
 
-      <section className="section started-our-appSec">
-        <div className="appSecContainer">
-          <div className="started-our-app-inner">
-            <div style={{ padding: "72px" }} className="started-our-app-rht">
-              <img className="iconfooterLogo" alt="" src="/icon1.svg" />
-              <h2 className="titleGetStarted">
-                Twotixx <span>Box Office</span>
-              </h2>
-              <p style={{ fontSize: "20px" }} className="pGetStarted">
-                Effortlessly create, manage, and sell event tickets — All in one
-                platform!
-              </p>
-              <CommonButton
-                text=" Get started"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                  navigate("/organisers");
-                }}
-              />
-            </div>
+        <section className="section started-our-appSec">
+          <div className="appSecContainer">
+            <div className="started-our-app-inner">
+              <div style={{ padding: "72px" }} className="started-our-app-rht">
+                <img className="iconfooterLogo" alt="" src="/icon1.svg" />
+                <h2 className="titleGetStarted">
+                  Twotixx <span>Box Office</span>
+                </h2>
+                <p style={{ fontSize: "20px" }} className="pGetStarted">
+                  Effortlessly create, manage, and sell event tickets — All in
+                  one platform!
+                </p>
+                <CommonButton
+                  text=" Get started"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/organisers");
+                  }}
+                />
+              </div>
 
-            <div className="started-our-app-lft">
-              {/* <img
+              <div className="started-our-app-lft">
+                {/* <img
               src="/mask-twotixx-box-office.svg"
               alt="mask-twotixx-box-office"
               style={{position: 'absolute', top: '0', right: '0', bottom: 0, zIndex: '-1', height: '100%', borderRadius: '24px'}}
             /> */}
-              <img
-                className="mask-twotixx-box-officeImg mask-twotixx-box-officeImg-desktop"
-                src="/mask-twotixx-box-office-desktop.svg"
-                alt="mask-twotixx-box-office"
-                style={{
-                  position: "absolute",
-                  top: "0",
-                  right: "0",
-                  bottom: 0,
-                  zIndex: "-1",
-                  height: "100%",
-                  borderRadius: "24px",
-                }}
-              />
-              <img
-                className="mask-twotixx-box-officeImg mask-twotixx-box-officeImg-mobile"
-                src="/mask-twotixx-box-office-mobile.svg"
-                alt="mask-twotixx-box-office"
-                style={{
-                  position: "absolute",
-                  top: "0",
-                  right: "0",
-                  bottom: 0,
-                  zIndex: "-1",
-                  height: "100%",
-                  borderRadius: "24px",
-                }}
-              />
-              <img
-                style={{ borderRadius: "24px" }}
-                src="/HomeMacBook1.png"
-                alt="iPhone-new"
-                className="img-fluid iPhone-mobile-desktop"
-              />
-              <img
-                src="/mac-twotix-box-office-home-mobile1.png"
-                alt="iPhonePro-mobile"
-                className="img-fluid iPhone-mobile-mobile"
-              />
-              {/* <img className="img-fluid bannerGetStarted" src="/iPhone-new3-Mobile.png" alt="iPhonePro-mobile" /> */}
+                <img
+                  className="mask-twotixx-box-officeImg mask-twotixx-box-officeImg-desktop"
+                  src="/mask-twotixx-box-office-desktop.svg"
+                  alt="mask-twotixx-box-office"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    right: "0",
+                    bottom: 0,
+                    zIndex: "-1",
+                    height: "100%",
+                    borderRadius: "24px",
+                  }}
+                />
+                <img
+                  className="mask-twotixx-box-officeImg mask-twotixx-box-officeImg-mobile"
+                  src="/mask-twotixx-box-office-mobile.svg"
+                  alt="mask-twotixx-box-office"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    right: "0",
+                    bottom: 0,
+                    zIndex: "-1",
+                    height: "100%",
+                    borderRadius: "24px",
+                  }}
+                />
+                <img
+                  style={{ borderRadius: "24px" }}
+                  src="/HomeMacBook1.png"
+                  alt="iPhone-new"
+                  className="img-fluid iPhone-mobile-desktop"
+                />
+                <img
+                  src="/mac-twotix-box-office-home-mobile1.png"
+                  alt="iPhonePro-mobile"
+                  className="img-fluid iPhone-mobile-mobile"
+                />
+                {/* <img className="img-fluid bannerGetStarted" src="/iPhone-new3-Mobile.png" alt="iPhonePro-mobile" /> */}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="section new-home-bodyContent-sec body-mission-game-sec mission-game-right-mask-background homeBoxContImgRight">
-        <div className="new-home-bodyContent-inner boxContImgRightBody">
-          <div className="new-home-bodyContent-rht textContLeft">
-            <h2 className="boxContTitle">
-              Our mission is to <span> change the game</span>
-            </h2>
-            <p className="boxContP">
-              Our platform is designed to make a difference. We combat touting,
-              fraud, scams, and unfair resales while enhancing venue security
-              and strengthening fan-artist relationships. Experience the best in
-              event ticketing for both attendees and organisers.
-            </p>
-            <CommonButton
-              className="home-parg-btn"
-              text="Discover more"
-              onClick={() => navigate("/About")}
-            />
-          </div>
-          <div className="new-home-bodyContent-lft imgContRight">
-            <TicketGuardImg2 className="img-fluid" />
-          </div>
-        </div>
-      </section>
-
-      <section className="section new-home-bodyContent-sec homeBoxContImgLeft">
-        <div className="new-home-bodyContent-inner-top boxContImgLeftBody">
-          <div className="imgContLeft">
-            <TicketGuardImg />
-          </div>
-          <div className="new-home-bodyContent-rht textContRight">
-            <TicketGuardTextImg className="img-fluid imgTicketGuard" />
-            <h2 className="boxContTitle">Elevating event security</h2>
-            <p className="boxContP">
-              Twotixx’s TicketGuard® takes smart tickets to the next level with
-              identity verification features. This added layer ensures each
-              ticket is securely linked to a verified individual, offering more
-              than just event entry.
-            </p>
-            <CommonButton
-              className="home-parg-btn"
-              text="Find out more"
-              onClick={() => navigate("/ticketGuard")}
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="section started-our-appSec">
-        <div className="appSecContainer">
-          <div className="started-our-app-inner">
-            <div className="started-our-app-lft">
-              <img
-                src="/iPhone-new3-update.png"
-                alt="iPhone-new"
-                className="img-fluid iPhone-mobile-desktop"
-              />
-              <img
-                src="/iPhone-new3-Mobile.png"
-                alt="iPhonePro-mobile"
-                className="img-fluid iPhone-mobile-mobile"
-              />
-              {/* <img className="img-fluid bannerGetStarted" src="/iPhone-new3-Mobile.png" alt="iPhonePro-mobile" /> */}
-            </div>
-            <div className="started-our-app-rht">
-              <img className="iconfooterLogo" alt="" src="/icon1.svg" />
-              <h2 className="titleGetStarted">
-                Get started with <span>our app</span>
+        <section className="section new-home-bodyContent-sec body-mission-game-sec mission-game-right-mask-background homeBoxContImgRight">
+          <div className="new-home-bodyContent-inner boxContImgRightBody">
+            <div className="new-home-bodyContent-rht textContLeft">
+              <h2 className="boxContTitle">
+                Our mission is to <span> change the game</span>
               </h2>
-              <p className="pGetStarted">
-                Download the Twotixx App to access and manage your event
-                tickets. Available on the App Store (iOS) or Google Play store
-                (Android).
+              <p className="boxContP">
+                Our platform is designed to make a difference. We combat
+                touting, fraud, scams, and unfair resales while enhancing venue
+                security and strengthening fan-artist relationships. Experience
+                the best in event ticketing for both attendees and organisers.
               </p>
               <CommonButton
                 className="home-parg-btn"
-                text=" Download Twotixx"
-                onClick={handleTowtixDownload}
+                text="Discover more"
+                onClick={() => navigate("/About")}
+              />
+            </div>
+            <div className="new-home-bodyContent-lft imgContRight">
+              <TicketGuardImg2 className="img-fluid" />
+            </div>
+          </div>
+        </section>
+
+        <section className="section new-home-bodyContent-sec homeBoxContImgLeft">
+          <div className="new-home-bodyContent-inner-top boxContImgLeftBody">
+            <div className="imgContLeft">
+              <TicketGuardImg />
+            </div>
+            <div className="new-home-bodyContent-rht textContRight">
+              <TicketGuardTextImg className="img-fluid imgTicketGuard" />
+              <h2 className="boxContTitle">Elevating event security</h2>
+              <p className="boxContP">
+                Twotixx’s TicketGuard® takes smart tickets to the next level
+                with identity verification features. This added layer ensures
+                each ticket is securely linked to a verified individual,
+                offering more than just event entry.
+              </p>
+              <CommonButton
+                className="home-parg-btn"
+                text="Find out more"
+                onClick={() => navigate("/ticketGuard")}
               />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <ReadyToJoin
-        handleTicketSection={handleSellSection}
-        text1={"Selling tickets online?"}
-        text2={"Try Twotixx"}
-        buttonTitle={"Learn More"}
-      />
+        <section className="section started-our-appSec">
+          <div className="appSecContainer">
+            <div className="started-our-app-inner">
+              <div className="started-our-app-lft">
+                <img
+                  src="/iPhone-new3-update.png"
+                  alt="iPhone-new"
+                  className="img-fluid iPhone-mobile-desktop"
+                />
+                <img
+                  src="/iPhone-new3-Mobile.png"
+                  alt="iPhonePro-mobile"
+                  className="img-fluid iPhone-mobile-mobile"
+                />
+                {/* <img className="img-fluid bannerGetStarted" src="/iPhone-new3-Mobile.png" alt="iPhonePro-mobile" /> */}
+              </div>
+              <div className="started-our-app-rht">
+                <img className="iconfooterLogo" alt="" src="/icon1.svg" />
+                <h2 className="titleGetStarted">
+                  Get started with <span>our app</span>
+                </h2>
+                <p className="pGetStarted">
+                  Download the Twotixx App to access and manage your event
+                  tickets. Available on the App Store (iOS) or Google Play store
+                  (Android).
+                </p>
+                <CommonButton
+                  className="home-parg-btn"
+                  text=" Download Twotixx"
+                  onClick={handleTowtixDownload}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-      {/* <section className="section selling-online-sec">
+        <ReadyToJoin
+          handleTicketSection={handleSellSection}
+          text1={"Selling tickets online?"}
+          text2={"Try Twotixx"}
+          buttonTitle={"Learn More"}
+        />
+
+        {/* <section className="section selling-online-sec">
         <div className="container">
           <h3 style={{ display: "flex", flexDirection: "column" }}>
             Selling tickets online?{" "}
@@ -498,11 +504,11 @@ function Home() {
         </div>
       </section> */}
 
-      <div className="footer-home">
-        <Footer />
+        <div className="footer-home">
+          <Footer />
+        </div>
       </div>
-    </div>
-    </HelmetProvider>
+    </>
   );
 }
 
