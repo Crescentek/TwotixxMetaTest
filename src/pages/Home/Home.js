@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { renderToNodeStream } from "react-dom/server";
 import "./Home.css";
@@ -145,20 +145,20 @@ function Home() {
     return <Loader />;
   }
 
-  const helmetContext = {};
-
   return (
     <>
       <Helmet
-      //     onChangeClientState={newState => {
-      // // Add description
-      // const metaDescription = document.querySelector(
-      // 'meta[name="og:description"]'
-      // );
-      // if (metaDescription) {
-      // metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
-      // }
-      // }}
+        onChangeClientState={(newState) => {
+          const metaDescription = document.querySelector(
+            'meta[name="og:description"]',
+          );
+          if (metaDescription) {
+            metaDescription.setAttribute(
+              "content",
+              "Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.",
+            );
+          }
+        }}
       >
         <title>
           Twotixx | Your Gateway to Exciting Events with Smart Digital
