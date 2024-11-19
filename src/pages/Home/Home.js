@@ -108,6 +108,10 @@ function Home() {
   // }, []);
 
   useEffect(() => {
+    document.querySelector('meta[name="description"]').setAttribute("content", 'this is Home test descriptions');
+    document.querySelector('meta[name="og:description"]').setAttribute("content", 'this is Home meta OG test descriptions');
+    // document.getElementsByTagName('meta')["og:description"].content = "My new page description!!";
+
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -155,13 +159,13 @@ metaDescription.setAttribute('content', 'Discover a world of events with Twotixx
 }
 }}
 >
-        <title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing....</title>
+        <title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.</title>
         <link rel="canonical" href="https://twotixx-meta-test.vercel.app/" />
         <meta name="description" content="Home - Description" />
-        <meta property="og:title" content="Home - OG Title" />
-        <meta property="og:description" content="Home - OG Description" />
-        <meta property="og:image" content="https://picsum.photos/id/237/200/300" />
-        <meta property="og:url" content="https://twotixx-meta-test.vercel.app/" />
+        <meta name="og:title" content="Home - OG Title" />
+        <meta name="og:description" content="Home - OG Description" />
+        <meta name="og:image" content="https://picsum.photos/id/237/200/300" />
+        <meta name="og:url" content="https://twotixx-meta-test.vercel.app/" />
       </Helmet>
     <div className="terms-service-main">
       <Navbar />
