@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/about", "destination": "/api/server" },
+      { "source": "/contact", "destination": "/api/server" },
+      { "source": "/", "destination": "/api/server" }
+    ]
+  }
