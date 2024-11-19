@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const path = require('path');
 const fs = require('fs')
 
@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
     }
     data = data.replace(/\$META_OG_TITLE/g, 'Home Page');
     data = data.replace(/\$META_OG_DESCRIPTION/g, "Home page description");
-    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
     response.send(result);
   });
 });
@@ -27,7 +27,7 @@ app.get('/about', function(request, response) {
     }
     data = data.replace(/\$META_OG_TITLE/g, 'About Page');
     data = data.replace(/\$META_OG_DESCRIPTION/g, "About page description");
-    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
     response.send(result);
   });
 });
@@ -41,7 +41,7 @@ app.get('/contact', function(request, response) {
     }
     data = data.replace(/\$META_OG_TITLE/g, 'Contact Page');
     data = data.replace(/\$META_OG_DESCRIPTION/g, "Contact page description");
-    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
     response.send(result);
   });
 });
