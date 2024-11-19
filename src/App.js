@@ -84,7 +84,8 @@ function App() {
           {/* </div> */}
         </Router>
       </Provider>
-    </HelmetProvider>
+    </HelmetProvider>,
+  document.getElementById('root')
   );
 }
 

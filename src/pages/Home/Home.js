@@ -108,8 +108,8 @@ function Home() {
   // }, []);
 
   useEffect(() => {
-    document.querySelector('meta[name="description"]').setAttribute("content", 'this is Home test descriptions');
-    document.querySelector('meta[name="og:description"]').setAttribute("content", 'this is Home meta OG test descriptions');
+    // document.querySelector('meta[name="description"]').setAttribute("content", 'this is Home test descriptions');
+    // document.querySelector('meta[name="og:description"]').setAttribute("content", 'this is Home meta OG test descriptions');
     // document.getElementsByTagName('meta')["og:description"].content = "My new page description!!";
 
     setTimeout(() => {
@@ -149,15 +149,16 @@ function Home() {
 
   return (
     <HelmetProvider context={helmetContext}>
-    <Helmet onChangeClientState={newState => {
-// Add description
-const metaDescription = document.querySelector(
-'meta[name="og:description"]'
-);
-if (metaDescription) {
-metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
-}
-}}
+    <Helmet 
+//     onChangeClientState={newState => {
+// // Add description
+// const metaDescription = document.querySelector(
+// 'meta[name="og:description"]'
+// );
+// if (metaDescription) {
+// metaDescription.setAttribute('content', 'Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.');
+// }
+// }}
 >
         <title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.</title>
         <link rel="canonical" href="https://twotixx-meta-test.vercel.app/" />
