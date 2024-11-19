@@ -147,7 +147,7 @@ function Home() {
 
   return (
     <>
-      <Helmet
+      {/* <Helmet
         onChangeClientState={(newState) => {
           const metaDescription = document.querySelector(
             'meta[name="og:description"]',
@@ -170,7 +170,7 @@ function Home() {
         <meta name="og:description" content="Home - OG Description" />
         <meta name="og:image" content="https://picsum.photos/id/237/200/300" />
         <meta name="og:url" content="https://twotixx-meta-test.vercel.app/" />
-      </Helmet>
+      </Helmet> */}
       <div className="terms-service-main">
         <Navbar />
         <section className="home-banner">

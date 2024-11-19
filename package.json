@@ -51,7 +51,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-"middleware-dev": "vercel dev" ,
+    "dev": "vercel dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "npm run build&&node server/index.js"

@@ -19,14 +19,14 @@ function About() {
 
   return (
     <>
-    <Helmet>
+    {/* <Helmet>
         <title>About - Title</title>
         <meta name="description" content="About - Description" />
         <meta property="og:title" content="About - OG Title" />
         <meta property="og:description" content="About - OG Description" />
         <meta property="og:image" content="https://picsum.photos/seed/picsum/200/300" />
         <meta property="og:url" content="https://staging.twotixx.com/about" />
-      </Helmet>
+      </Helmet> */}
     <div className="about-page-wrapper">
       <Navbar />
       <div className="deep-blue-mask-container-about">
