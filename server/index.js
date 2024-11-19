@@ -12,7 +12,7 @@ app.use(express.static(
     { maxAge: '300000000d' },
 ));
 // here we serve the index.html page
-app.get('*/', (req, res, next) => {
+app.get('', (req, res, next) => {
     fs.readFile(indexPath, 'utf8', (err, htmlData) => {
         if (err) {
             console.error('Error during file reading', err);
@@ -34,7 +34,7 @@ app.get('*/', (req, res, next) => {
         // .replace('META_OG_IMAGE_SECURED', 'https://mvp.bpmrewards.io/api/images/users/356')
         htmlData = htmlData.replace(
             "<title>Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.</title>",
-            `<title>${'Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing..'}</title>`
+            `<title>${'Home Title...'}</title>`
         )
         .replace('META_OG_TITLE', 'Home OG Title')
         .replace('META_OG_DESCRIPTION', 'Home OG Description')
@@ -64,8 +64,8 @@ app.get('/about', (req, res, next) => {
         .replace('OG_TITLE', 'TestMetaTwotixxTitleOGAbout')
         .replace('OG_DESCRIPTION', 'TestMetaTwotixxDescriptionAbout')
         .replace('META_OG_DESCRIPTION', 'TestMetaTwotixxDescriptionOGAbout')
-        .replace('META_OG_IMAGE', 'https://mvp.bpmrewards.io/api/images/users/1386')
-        .replace('META_OG_IMAGE_SECURED', 'https://mvp.bpmrewards.io/api/images/users/1386')
+        .replace('%PUBLIC_URL%/OGImage.jpg', 'https://mvp.bpmrewards.io/api/images/users/1386')
+        .replace('%PUBLIC_URL%/OGImage.jpg', 'https://mvp.bpmrewards.io/api/images/users/1386')
         return res.send(htmlData);
     });
 
@@ -90,8 +90,8 @@ app.get('/contact', (req, res, next) => {
         .replace('OG_TITLE', 'TestMetaTwotixxTitleOGContact')
         .replace('OG_DESCRIPTION', 'TestMetaTwotixxDescriptionContact')
         .replace('META_OG_DESCRIPTION', 'TestMetaTwotixxDescriptionOGContact')
-        .replace('META_OG_IMAGE', 'https://mvp.bpmrewards.io/api/images/users/1386')
-        .replace('META_OG_IMAGE_SECURED', 'https://mvp.bpmrewards.io/api/images/users/1386')
+        .replace('%PUBLIC_URL%/OGImage.jpg', 'https://mvp.bpmrewards.io/api/images/users/1386')
+        .replace('%PUBLIC_URL%/OGImage.jpg', 'https://mvp.bpmrewards.io/api/images/users/1386')
         return res.send(htmlData);
     });
 
