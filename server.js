@@ -1,75 +1,56 @@
-const express = require("express");
-const path = require("path");
-const fs = require("fs");
-
+const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
+const path = require('path');
+const fs = require('fs')
 
-app.get("/", function (req, res) {
-  const filePath = path.resolve(__dirname, "./public", "index.html");
-
-  fs.readFile(filePath, "utf8", function (err, data) {
+app.get('/', function(request, response) {
+  console.log('Home page visited!');
+  const filePath = path.resolve(__dirname, './build', 'index.html');
+  fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data.replace(/{{title}}/, "Sachin Verma");
-    data = data.replace(
-      /{{description}}/,
-      "Sachin Verma's personal site and blog"
-    );
-
-    res.send(data);
+    data = data.replace(/\$META_OG_TITLE/g, 'Home Page');
+    data = data.replace(/\$META_OG_DESCRIPTION/g, "Home page description");
+    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    response.send(result);
   });
 });
 
-app.get("/about", function (req, res) {
-  const filePath = path.resolve(__dirname, "./public", "index.html");
-
-  fs.readFile(filePath, "utf8", function (err, data) {
+app.get('/about', function(request, response) {
+  console.log('About page visited!');
+  const filePath = path.resolve(__dirname, './build', 'index.html')
+  fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data.replace(/{{title}}/, "About | Sachin Verma");
-    data = data.replace(/{{description}}/, "About Sachin Verma");
-
-    res.send(data);
+    data = data.replace(/\$META_OG_TITLE/g, 'About Page');
+    data = data.replace(/\$META_OG_DESCRIPTION/g, "About page description");
+    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    response.send(result);
   });
 });
 
-app.get("/contact", function (req, res) {
-  const filePath = path.resolve(__dirname, "./public", "index.html");
-
-  fs.readFile(filePath, "utf8", function (err, data) {
+app.get('/contact', function(request, response) {
+  console.log('Contact page visited!');
+  const filePath = path.resolve(__dirname, './build', 'index.html')
+  fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data.replace(/{{title}}/, "Contact | Sachin Verma");
-    data = data.replace(/{{description}}/, "Contact Sachin Verma");
-
-    res.send(data);
+    data = data.replace(/\$META_OG_TITLE/g, 'Contact Page');
+    data = data.replace(/\$META_OG_DESCRIPTION/g, "Contact page description");
+    result = data.replace(/\$%PUBLIC_URL%/OGImage.jpg/g, 'https://i.imgur.com/V7irMl8.png');
+    response.send(result);
   });
 });
 
-app.use(express.static(path.resolve(__dirname, "./public")));
+app.use(express.static(path.resolve(__dirname, './build')));
 
-app.get("*", function (req, res) {
-  const filePath = path.resolve(__dirname, "./public", "index.html");
-  fs.readFile(filePath, "utf8", function (err, data) {
-    if (err) {
-      return console.log(err);
-    }
-
-    data = data.replace(/{{title}}/, "Sachin Verma");
-    data = data.replace(
-      /{{description}}/,
-      "Sachin Verma's personal site and blog"
-    );
-
-    res.send(data);
-  });
+app.get('*', function(request, response) {
+  const filePath = path.resolve(__dirname, './build', 'index.html');
+  response.sendFile(filePath);
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

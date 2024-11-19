@@ -54,7 +54,7 @@
     "dev": "vercel dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npm run build&&node api/server.js"
+    "server": "npm run build&&node server.js"
   },
   "eslintConfig": {
     "extends": [
