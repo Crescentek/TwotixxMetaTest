@@ -322,6 +322,12 @@ function Seller() {
 
   return (
     <div id="scrollTarget" className="terms-service-main">
+      <Helmet
+      >
+        <title>
+        Event Organisers Hub | Twotixx Ticketing Solutions
+        </title>
+      </Helmet>
       {isLoading && <Loader backgroundColor={"white"} />}
 
       <Navbar />

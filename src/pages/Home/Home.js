@@ -147,30 +147,13 @@ function Home() {
 
   return (
     <>
-      {/* <Helmet
-        onChangeClientState={(newState) => {
-          const metaDescription = document.querySelector(
-            'meta[name="og:description"]',
-          );
-          if (metaDescription) {
-            metaDescription.setAttribute(
-              "content",
-              "Discover a world of events with Twotixx! Enjoy seamless ticket purchases with our innovative digital, NFT, and personalised ticket options. Experience secure, transparent ticketing with low fees today.",
-            );
-          }
-        }}
+      <Helmet
       >
         <title>
           Twotixx | Your Gateway to Exciting Events with Smart Digital
           Ticketing.
         </title>
-        <link rel="canonical" href="https://twotixx-meta-test.vercel.app/" />
-        <meta name="description" content="Home - Description" />
-        <meta name="og:title" content="Home - OG Title" />
-        <meta name="og:description" content="Home - OG Description" />
-        <meta name="og:image" content="https://picsum.photos/id/237/200/300" />
-        <meta name="og:url" content="https://twotixx-meta-test.vercel.app/" />
-      </Helmet> */}
+      </Helmet>
       <div className="terms-service-main">
         <Navbar />
         <section className="home-banner">
