@@ -11,9 +11,11 @@ app.get('/', function(request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$META_OG_TITLE/g, 'Home Page');
-    data = data.replace(/\$META_OG_DESCRIPTION/g, "Home page description");
-    result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
+    data = data.replace('Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.', 'Home Page');
+    data = data.replace(/\META_OG_TITLE/g, 'Home Page');
+    data = data.replace(/\META_OG_DESCRIPTION/g, "Home page OG description");
+    data = data.replace(/\OG_DESCRIPTION/g, "Home page description");
+    result = data.replace(/\OGImage/g, 'https://mvp.bpmrewards.io/api/images/users/356');
     response.send(result);
   });
 });
@@ -25,8 +27,10 @@ app.get('/about', function(request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$META_OG_TITLE/g, 'About Page');
-    data = data.replace(/\$META_OG_DESCRIPTION/g, "About page description");
+    data = data.replace('Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.', 'About Page');
+    data = data.replace(/\META_OG_TITLE/g, 'About Page');
+    data = data.replace(/\META_OG_DESCRIPTION/g, "About page OG description");
+    data = data.replace(/\OG_DESCRIPTION/g, "About page description");
     result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
     response.send(result);
   });
@@ -39,9 +43,11 @@ app.get('/contact', function(request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$META_OG_TITLE/g, 'Contact Page');
-    data = data.replace(/\$META_OG_DESCRIPTION/g, "Contact page description");
-    result = data.replace(/\OGImage/g, 'https://i.imgur.com/V7irMl8.png');
+    data = data.replace('Twotixx | Your Gateway to Exciting Events with Smart Digital Ticketing.', 'Contact Page');
+    data = data.replace(/\META_OG_TITLE/g, 'Contact Page');
+    data = data.replace(/\META_OG_DESCRIPTION/g, "Contact page OG description");
+    data = data.replace(/\OG_DESCRIPTION/g, "About page description");
+    result = data.replace(/\OGImage/g, 'https://mvp.bpmrewards.io/api/images/users/1386');
     response.send(result);
   });
 });
